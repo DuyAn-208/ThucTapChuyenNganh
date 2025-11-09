@@ -1,0 +1,282 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-option mb-4">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="breadcrumb__text">
+                    <h2>Cake Categories</h2>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="breadcrumb__links">
+                    <a href="/admin">Dashboard</a>
+                    <span>Cake Categories</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Page Heading -->
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">Cake Categories Management</h1>
+    <a href="/admin/category/add" class="d-none d-sm-inline-block btn btn-primary shadow-sm">
+        <i class="fa fa-plus fa-sm text-white-50 mr-1"></i> Add New Category
+    </a>
+</div>
+
+<!-- Categories Table -->
+<div class="card shadow mb-4">
+    <div class="card-header py-3 bg-light">
+        <h6 class="m-0 font-weight-bold text-dark">All Cake Categories</h6>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
+                <thead class="thead-light">
+                <tr>
+                    <th>ID</th>
+                    <th>Category Name</th>
+                    <th>Description</th>
+                    <th>Cakes Count</th>
+                    <th>Status</th>
+                    <th>Created Date</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><strong>Chocolate Cakes</strong></td>
+                    <td>Rich chocolate cakes, fudge cakes, and brownies</td>
+                    <td>45</td>
+                    <td><span class="badge badge-success">Active</span></td>
+                    <td>2024-01-15</td>
+                    <td>
+                        <a href="/admin/category/edit/1" class="btn btn-sm btn-warning">
+                            <i class="fa fa-edit"></i> Edit
+                        </a>
+                        <button class="btn btn-sm btn-danger">
+                            <i class="fa fa-trash"></i> Delete
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><strong>Fruit Cakes</strong></td>
+                    <td>Fresh fruit cakes, berry delights, and citrus specialties</td>
+                    <td>32</td>
+                    <td><span class="badge badge-success">Active</span></td>
+                    <td>2024-01-10</td>
+                    <td>
+                        <a href="/admin/category/edit/2" class="btn btn-sm btn-warning">
+                            <i class="fa fa-edit"></i> Edit
+                        </a>
+                        <button class="btn btn-sm btn-danger">
+                            <i class="fa fa-trash"></i> Delete
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><strong>Cheesecakes</strong></td>
+                    <td>New York style, baked, and no-bake cheesecakes</td>
+                    <td>28</td>
+                    <td><span class="badge badge-success">Active</span></td>
+                    <td>2024-01-08</td>
+                    <td>
+                        <a href="/admin/category/edit/3" class="btn btn-sm btn-warning">
+                            <i class="fa fa-edit"></i> Edit
+                        </a>
+                        <button class="btn btn-sm btn-danger">
+                            <i class="fa fa-trash"></i> Delete
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><strong>Wedding Cakes</strong></td>
+                    <td>Elegant wedding cakes and celebration cakes</td>
+                    <td>26</td>
+                    <td><span class="badge badge-success">Active</span></td>
+                    <td>2024-01-05</td>
+                    <td>
+                        <a href="/admin/category/edit/4" class="btn btn-sm btn-warning">
+                            <i class="fa fa-edit"></i> Edit
+                        </a>
+                        <button class="btn btn-sm btn-danger">
+                            <i class="fa fa-trash"></i> Delete
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><strong>Cupcakes</strong></td>
+                    <td>Assorted cupcakes, mini cakes, and cake pops</td>
+                    <td>18</td>
+                    <td><span class="badge badge-warning">Inactive</span></td>
+                    <td>2024-01-03</td>
+                    <td>
+                        <a href="/admin/category/edit/5" class="btn btn-sm btn-warning">
+                            <i class="fa fa-edit"></i> Edit
+                        </a>
+                        <button class="btn btn-sm btn-danger">
+                            <i class="fa fa-trash"></i> Delete
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><strong>Specialty Cakes</strong></td>
+                    <td>Red velvet, carrot cake, and unique flavor combinations</td>
+                    <td>35</td>
+                    <td><span class="badge badge-success">Active</span></td>
+                    <td>2024-01-02</td>
+                    <td>
+                        <a href="/admin/category/edit/6" class="btn btn-sm btn-warning">
+                            <i class="fa fa-edit"></i> Edit
+                        </a>
+                        <button class="btn btn-sm btn-danger">
+                            <i class="fa fa-trash"></i> Delete
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><strong>Gluten-Free Cakes</strong></td>
+                    <td>Gluten-free and allergy-friendly cake options</td>
+                    <td>15</td>
+                    <td><span class="badge badge-success">Active</span></td>
+                    <td>2024-01-01</td>
+                    <td>
+                        <a href="/admin/category/edit/7" class="btn btn-sm btn-warning">
+                            <i class="fa fa-edit"></i> Edit
+                        </a>
+                        <button class="btn btn-sm btn-danger">
+                            <i class="fa fa-trash"></i> Delete
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td><strong>Seasonal Cakes</strong></td>
+                    <td>Holiday and seasonal specialty cakes</td>
+                    <td>22</td>
+                    <td><span class="badge badge-success">Active</span></td>
+                    <td>2023-12-28</td>
+                    <td>
+                        <a href="/admin/category/edit/8" class="btn btn-sm btn-warning">
+                            <i class="fa fa-edit"></i> Edit
+                        </a>
+                        <button class="btn btn-sm btn-danger">
+                            <i class="fa fa-trash"></i> Delete
+                        </button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Pagination -->
+        <div class="shop__last__option mt-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="shop__pagination">
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#"><i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="shop__last__text">
+                        <p>Showing 1-8 of 8 categories</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Quick Stats -->
+<div class="row">
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-primary shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                            Total Categories
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">8</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fa fa-list fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-success shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                            Active Categories
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">7</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fa fa-check-circle fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-warning shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                            Total Cakes
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">201</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fa fa-birthday-cake fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-info shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                            Avg Cakes per Category
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">25</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fa fa-chart-bar fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize DataTable
+        $('#dataTable').DataTable({
+            "pageLength": 10,
+            "lengthMenu": [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]],
+            "order": [[0, 'asc']]
+        });
+    });
+</script>

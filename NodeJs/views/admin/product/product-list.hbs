@@ -1,0 +1,364 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-option mb-4">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="breadcrumb__text">
+                    <h2>Cake Management</h2>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="breadcrumb__links">
+                    <a href="/admin">Dashboard</a>
+                    <span>All Cakes</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Page Heading -->
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">All Cakes</h1>
+    <a href="/admin/product/add" class="d-none d-sm-inline-block btn btn-primary shadow-sm">
+        <i class="fa fa-plus fa-sm text-white-50 mr-1"></i> Add New Cake
+    </a>
+</div>
+
+<!-- Quick Stats Cards -->
+<div class="row mb-4">
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-primary shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                            Total Cakes
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">245</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fa fa-birthday-cake fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-success shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                            In Stock
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">218</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fa fa-check-circle fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-warning shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                            Low Stock
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">15</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fa fa-exclamation-triangle fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-danger shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
+                            Out of Stock
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">12</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fa fa-times-circle fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Cakes Table -->
+<div class="card shadow mb-4">
+    <div class="card-header py-3 bg-light d-flex justify-content-between align-items-center">
+        <h6 class="m-0 font-weight-bold text-dark">Cake List</h6>
+        <div class="btn-group">
+            <button type="button" class="btn btn-outline-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-filter"></i> Filter
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">All Cakes</a>
+                <a class="dropdown-item" href="#">In Stock</a>
+                <a class="dropdown-item" href="#">Out of Stock</a>
+                <a class="dropdown-item" href="#">Active</a>
+                <a class="dropdown-item" href="#">Inactive</a>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
+                <thead class="thead-light">
+                <tr>
+                    <th>ID</th>
+                    <th>Image</th>
+                    <th>Cake Name</th>
+                    <th>Category</th>
+                    <th>Bakery</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Status</th>
+                    <th>Created Date</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <img src="/img/shop/product-1.jpg" alt="Chocolate Fudge Cake" style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px;">
+                    </td>
+                    <td>
+                        <strong>Chocolate Fudge Delight</strong>
+                        <br>
+                        <small class="text-muted">Rich chocolate cake with fudge frosting</small>
+                    </td>
+                    <td>Chocolate Cakes</td>
+                    <td>Sweet Delights</td>
+                    <td>$45.99</td>
+                    <td>
+                        <span class="badge badge-success">45 in stock</span>
+                    </td>
+                    <td><span class="badge badge-success">Active</span></td>
+                    <td>2024-01-15</td>
+                    <td>
+                        <div class="btn-group btn-group-sm">
+                            <a href="/admin/product/edit/1" class="btn btn-warning">
+                                <i class="fa fa-edit"></i>
+                            </a>
+                            <button class="btn btn-danger">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                            <button class="btn btn-info">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>
+                        <img src="/img/shop/product-2.jpg" alt="Red Velvet Cake" style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px;">
+                    </td>
+                    <td>
+                        <strong>Classic Red Velvet</strong>
+                        <br>
+                        <small class="text-muted">Traditional red velvet with cream cheese</small>
+                    </td>
+                    <td>Specialty Cakes</td>
+                    <td>Velvet Dreams</td>
+                    <td>$52.99</td>
+                    <td>
+                        <span class="badge badge-success">32 in stock</span>
+                    </td>
+                    <td><span class="badge badge-success">Active</span></td>
+                    <td>2024-01-14</td>
+                    <td>
+                        <div class="btn-group btn-group-sm">
+                            <a href="/admin/product/edit/2" class="btn btn-warning">
+                                <i class="fa fa-edit"></i>
+                            </a>
+                            <button class="btn btn-danger">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                            <button class="btn btn-info">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>
+                        <img src="/img/shop/product-3.jpg" alt="New York Cheesecake" style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px;">
+                    </td>
+                    <td>
+                        <strong>New York Cheesecake</strong>
+                        <br>
+                        <small class="text-muted">Creamy baked cheesecake with berry compote</small>
+                    </td>
+                    <td>Cheesecakes</td>
+                    <td>Cheese Heaven</td>
+                    <td>$38.50</td>
+                    <td>
+                        <span class="badge badge-warning">5 in stock</span>
+                    </td>
+                    <td><span class="badge badge-success">Active</span></td>
+                    <td>2024-01-13</td>
+                    <td>
+                        <div class="btn-group btn-group-sm">
+                            <a href="/admin/product/edit/3" class="btn btn-warning">
+                                <i class="fa fa-edit"></i>
+                            </a>
+                            <button class="btn btn-danger">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                            <button class="btn btn-info">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>
+                        <img src="/img/shop/product-4.jpg" alt="Wedding Cake" style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px;">
+                    </td>
+                    <td>
+                        <strong>Elegant Wedding Cake</strong>
+                        <br>
+                        <small class="text-muted">Three-tier vanilla cake with buttercream</small>
+                    </td>
+                    <td>Wedding Cakes</td>
+                    <td>Celebration Cakes</td>
+                    <td>$179.99</td>
+                    <td>
+                        <span class="badge badge-success">26 in stock</span>
+                    </td>
+                    <td><span class="badge badge-success">Active</span></td>
+                    <td>2024-01-12</td>
+                    <td>
+                        <div class="btn-group btn-group-sm">
+                            <a href="/admin/product/edit/4" class="btn btn-warning">
+                                <i class="fa fa-edit"></i>
+                            </a>
+                            <button class="btn btn-danger">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                            <button class="btn btn-info">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>
+                        <img src="/img/shop/product-5.jpg" alt="Cupcake Box" style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px;">
+                    </td>
+                    <td>
+                        <strong>Assorted Cupcake Box (12pcs)</strong>
+                        <br>
+                        <small class="text-muted">Mixed flavor cupcakes with decorative frosting</small>
+                    </td>
+                    <td>Cupcakes</td>
+                    <td>Mini Delights</td>
+                    <td>$28.99</td>
+                    <td>
+                        <span class="badge badge-danger">Out of stock</span>
+                    </td>
+                    <td><span class="badge badge-warning">Inactive</span></td>
+                    <td>2024-01-11</td>
+                    <td>
+                        <div class="btn-group btn-group-sm">
+                            <a href="/admin/product/edit/5" class="btn btn-warning">
+                                <i class="fa fa-edit"></i>
+                            </a>
+                            <button class="btn btn-danger">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                            <button class="btn btn-info">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>
+                        <img src="/img/shop/product-6.jpg" alt="Fruit Cake" style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px;">
+                    </td>
+                    <td>
+                        <strong>Fresh Berry Medley Cake</strong>
+                        <br>
+                        <small class="text-muted">Vanilla sponge with mixed fresh berries</small>
+                    </td>
+                    <td>Fruit Cakes</td>
+                    <td>Berry Bliss</td>
+                    <td>$42.50</td>
+                    <td>
+                        <span class="badge badge-success">18 in stock</span>
+                    </td>
+                    <td><span class="badge badge-success">Active</span></td>
+                    <td>2024-01-10</td>
+                    <td>
+                        <div class="btn-group btn-group-sm">
+                            <a href="/admin/product/edit/6" class="btn btn-warning">
+                                <i class="fa fa-edit"></i>
+                            </a>
+                            <button class="btn btn-danger">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                            <button class="btn btn-info">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Pagination -->
+        <div class="shop__last__option mt-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="shop__pagination">
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#"><i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="shop__last__text">
+                        <p>Showing 1-6 of 245 cakes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize DataTable
+        $('#dataTable').DataTable({
+            "pageLength": 10,
+            "lengthMenu": [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]],
+            "order": [[0, 'asc']]
+        });
+    });
+</script>
